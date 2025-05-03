@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.2 on darwin)" generated="2025-05-04T09:13:16.188502" rpa="false" schemaversion="5">
+<suite id="s1" name="Add To Cart" source="/Users/nonnyawful/Downloads/bewell-cart-test/tests/add_to_cart.robot">
+<test id="s1-t1" name="Add Three Products To Cart" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:13:16.257455" level="INFO">Opening browser 'chrome' to base url 'https://www.bewellstyle.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-04T09:13:16.257343" elapsed="10.146669"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-04T09:13:26.404541" elapsed="0.391718"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:13:26.796916" level="INFO">Typing text 'เบาะรองหลังเพื่อสุขภาพ สำหรับรถยนต์ | Car Seat Back Cushion' into text field 'id=s'.</msg>
+<arg>id=s</arg>
+<arg>${PRODUCT_1_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-04T09:13:26.796425" elapsed="0.184339"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:13:26.981065" level="INFO">Clicking button 'id=searchsubmit'.</msg>
+<arg>id=searchsubmit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-04T09:13:26.980937" elapsed="7.594454"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:13:34.576444" level="INFO">Opening url 'https://www.bewellstyle.com/product/car-seat-back-cushion/'</msg>
+<arg>${PRODUCT_1_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-04T09:13:34.576147" elapsed="5.626015"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[@name='add-to-cart' and @value='${PRODUCT_1_VALUE}']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-04T09:13:40.202352" elapsed="0.016020"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:13:40.218784" level="INFO">Clicking button 'xpath=//button[@name='add-to-cart' and @value='35797']'.</msg>
+<arg>xpath=//button[@name='add-to-cart' and @value='${PRODUCT_1_VALUE}']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-04T09:13:40.218612" elapsed="21.491852"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(@href,"/shop/") and contains(text(),"Back to shopping")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-04T09:14:01.710732" elapsed="0.044732"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:01.755749" level="INFO">Clicking element 'xpath=//a[contains(@href,"/shop/") and contains(text(),"Back to shopping")]'.</msg>
+<arg>xpath=//a[contains(@href,"/shop/") and contains(text(),"Back to shopping")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-04T09:14:01.755628" elapsed="6.641311"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:08.397344" level="INFO">Typing text 'เบาะรองหลังทรงสูง | Healthy Back' into text field 'id=s'.</msg>
+<arg>id=s</arg>
+<arg>${PRODUCT_2_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-04T09:14:08.397160" elapsed="0.107163"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:08.504766" level="INFO">Clicking button 'id=searchsubmit'.</msg>
+<arg>id=searchsubmit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-04T09:14:08.504572" elapsed="6.621828"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:15.126661" level="INFO">Opening url 'https://www.bewellstyle.com/product/bewell-healthy-back/'</msg>
+<arg>${PRODUCT_2_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-04T09:14:15.126547" elapsed="5.631265"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//select[@name='attribute_pa_color']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-04T09:14:20.757941" elapsed="0.014915"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:20.773136" level="INFO">Selecting options from selection list 'xpath=//select[@name='attribute_pa_color']' by label สีน้ำเงิน - เบาะรองหลังทรงสูง.</msg>
+<arg>xpath=//select[@name='attribute_pa_color']</arg>
+<arg>${PRODUCT_2_OPTION}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-04T09:14:20.772985" elapsed="0.080674"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-04T09:14:22.855557" level="INFO">Slept 2 seconds.</msg>
+<arg>2 s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-04T09:14:20.853850" elapsed="2.001870"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, "single_add_to_cart_button")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-04T09:14:22.856144" elapsed="0.015262"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:22.871971" level="INFO">Executing JavaScript:
+document.querySelector('button.single_add_to_cart_button').click()
+Without any arguments.</msg>
+<arg>document.querySelector('button.single_add_to_cart_button').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-04T09:14:22.871605" elapsed="4.323735"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:27.195591" level="INFO">Opening url 'https://www.bewellstyle.com/cart/'</msg>
+<arg>https://www.bewellstyle.com/cart/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-04T09:14:27.195506" elapsed="2.019567"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(@href,"/shop/") and contains(text(),"Back to shopping")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-04T09:14:29.215217" elapsed="0.026304"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:29.241779" level="INFO">Clicking element 'xpath=//a[contains(@href,"/shop/") and contains(text(),"Back to shopping")]'.</msg>
+<arg>xpath=//a[contains(@href,"/shop/") and contains(text(),"Back to shopping")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-04T09:14:29.241662" elapsed="5.399364"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:34.641334" level="INFO">Typing text 'ผ้าห่มเย็นอัจฉริยะ | Cool Blanket' into text field 'id=s'.</msg>
+<arg>id=s</arg>
+<arg>${PRODUCT_3_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-04T09:14:34.641184" elapsed="0.088482"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:34.729965" level="INFO">Clicking button 'id=searchsubmit'.</msg>
+<arg>id=searchsubmit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-04T09:14:34.729850" elapsed="7.035537"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:41.765818" level="INFO">Opening url 'https://www.bewellstyle.com/product/cool-blanket/'</msg>
+<arg>${PRODUCT_3_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-04T09:14:41.765578" elapsed="3.162967"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//select[@name='attribute_%e0%b8%aa%e0%b8%b5']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-04T09:14:44.928824" elapsed="0.013981"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:44.943091" level="INFO">Selecting options from selection list 'xpath=//select[@name='attribute_%e0%b8%aa%e0%b8%b5']' by label "ฟ้า".</msg>
+<arg>xpath=//select[@name='attribute_%e0%b8%aa%e0%b8%b5']</arg>
+<arg>${PRODUCT_3_COLOR}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-04T09:14:44.942948" elapsed="0.041214"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//select[@name='attribute_%e0%b8%82%e0%b8%99%e0%b8%b2%e0%b8%94']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-04T09:14:44.984348" elapsed="0.013758"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:44.998587" level="INFO">Selecting options from selection list 'xpath=//select[@name='attribute_%e0%b8%82%e0%b8%99%e0%b8%b2%e0%b8%94']' by label "200x230cm.".</msg>
+<arg>xpath=//select[@name='attribute_%e0%b8%82%e0%b8%99%e0%b8%b2%e0%b8%94']</arg>
+<arg>${PRODUCT_3_SIZE}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-04T09:14:44.998355" elapsed="0.058672"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-04T09:14:47.057989" level="INFO">Slept 2 seconds.</msg>
+<arg>2 s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-04T09:14:45.057247" elapsed="2.000983"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, "single_add_to_cart_button")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-04T09:14:47.058627" elapsed="0.011069"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:47.070108" level="INFO">Executing JavaScript:
+document.querySelector('button.single_add_to_cart_button').click()
+Without any arguments.</msg>
+<arg>document.querySelector('button.single_add_to_cart_button').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-04T09:14:47.069858" elapsed="4.629666"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-04T09:14:51.699897" level="INFO">Opening url 'https://www.bewellstyle.com/cart/'</msg>
+<arg>https://www.bewellstyle.com/cart/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-04T09:14:51.699740" elapsed="2.859040"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-04T09:14:54.558955" elapsed="0.130629"/>
+</kw>
+<status status="PASS" start="2025-05-04T09:13:16.256963" elapsed="98.432768"/>
+</test>
+<status status="PASS" start="2025-05-04T09:13:16.188937" elapsed="98.501044"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Add To Cart" id="s1" pass="1" fail="0" skip="0">Add To Cart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
